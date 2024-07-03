@@ -1,0 +1,84 @@
+/* Rest of your CSS styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(140, 40, 95);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold; /* Add this line to make the text bold */
+  }
+  
+  .nav-link:hover {
+    background-color: #dd1d1d;
+  }
+  
+  .active {
+    background-color: blue !important;
+  }
+  
+  .content {
+    display: none;
+    padding: 20px;
+    margin-top: 50px; /* To ensure content is visible below fixed navbar */
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(12, 161, 30);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Add this style to set the background for the home content section */
+  #home {
+    background-image: url('C:\Users\BHAVYA\PRODIGYINFOTECH\img1.jpeg'); /* Check the path to the image */
+    background-size: cover; /* Adjusts the size of the background image */
+    background-position: center; /* Positions the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: #1a1919; /* Set text color to white for better contrast */
+    padding: 20px; /* Add padding to improve readability */
+  }
